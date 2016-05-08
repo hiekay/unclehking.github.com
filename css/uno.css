@@ -1200,6 +1200,7 @@ hr {
   background-size: cover; }
 
 .panel-cover--collapsed {
+    overflow: hidden;
   width: 32%;
   max-width: 430px; }
 
@@ -1677,7 +1678,7 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin: 0 0 10px;
-  border-spacing: 0; 
+  border-spacing: 0;
   border: 1px solid #aaa;
 }
 
@@ -1699,5 +1700,5 @@ th, td {
   border: none;
 }
 pre {
-  font-family: 
+  font-family:
 }
