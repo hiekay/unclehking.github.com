@@ -1713,3 +1713,4 @@ th, td {
 pre {
   font-family:
 }
+.panel-cover--collapsed+canvas{display: none !important;}
