@@ -87,7 +87,7 @@
                 return this;
             },
             reSize : function(){
-                this.target.height = window.innerHeight;
+                this.target.height = this.target.parentNode.offsetWidth;
                 this.target.width  = window.innerWidth;
                 var columns = this.target.width/this.fSize;
                 this.drops =  new Array(parseInt(columns)).join(Math.random()*10).split("");
