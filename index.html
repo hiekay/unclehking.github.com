@@ -142,7 +142,7 @@ classes that you can use:
   </div>
 </header>
 
-<canvas id="c" style="position: absolute;z-index:1000;background:#000000;"></canvas>
+<canvas id="c" style="position: absolute;z-index:1000;"></canvas>
 <script>
     //HKing 2016-05-06
     var matrix = {
@@ -197,7 +197,10 @@ classes that you can use:
         }
     };
 
-    matrix.init(document.getElementById("c"));
+    if(!sessionStorage.getItem("isFirst")){
+        sessionStorage.setItem("isFirst",true)
+        matrix.init(document.getElementById("c"));
+    };
 
 </script>
 
