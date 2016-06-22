@@ -23,7 +23,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/06/22/aboutES6/index.html">
 <meta property="og:site_name" content="HKing写字的地方">
 <meta property="og:description" content="最近在写一些chrome扩展，这个纯粹的chrome运行环境比较适合拿es6的一些新特性来练手。记下一些对es6的使用心得体会。">
-<meta property="og:updated_time" content="2016-06-22T02:56:04.866Z">
+<meta property="og:updated_time" content="2016-06-22T03:30:18.279Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6的一些心得 | HKing写字的地方">
 <meta name="twitter:description" content="最近在写一些chrome扩展，这个纯粹的chrome运行环境比较适合拿es6的一些新特性来练手。记下一些对es6的使用心得体会。">
@@ -80,7 +80,7 @@
                 <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
               
                 
-                <li class="navigation__item"><a href="https://github.com/unclehking" title="" class="">Github项目</a></li>
+                <li class="navigation__item"><a href="https://github.com/unclehking?tab=repositories" title="" class="">Github项目</a></li>
               
 
             </ul>
@@ -187,7 +187,7 @@ classes that you can use:
   </header>
 
   <section id="post-content" class="article-content post">
-    <p>最近在写一些chrome扩展(git: <a href="https://github.com/unclehking?tab=repositories" target="_blank" rel="external">https://github.com/unclehking?tab=repositories</a> )，这个纯粹的chrome运行环境比较适合拿es6的一些新特性来练手。记下一些对es6的使用心得体会。</p>
+    <p>最近在写一些chrome扩展( <a href="https://github.com/unclehking?tab=repositories" target="_blank" rel="external">github repo</a> )，这个纯粹的chrome运行环境比较适合拿es6的一些新特性来练手。记下一些对es6的使用心得体会。</p>
 <p><strong>1、字符串模板</strong><br>前端编程有很大部分情况是在“拼接字符串”，这是个非常糟糕的编程体验。<br>以前:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var str = //</span><br><span class="line">var html =  <span class="string">"&lt;ul&gt;&lt;li&gt;"</span>+str+<span class="string">"&lt;li&gt;&lt;ul&gt;"</span>;</span><br></pre></td></tr></table></figure></p>
 <p>ES6:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var str = //</span><br><span class="line">var html =  `&lt;ul&gt;</span><br><span class="line">		&lt;li&gt;<span class="variable">$&#123;str&#125;</span>&lt;/li&gt;</span><br><span class="line">	    &lt;ul&gt;`;</span><br></pre></td></tr></table></figure></p>
 <p>使用字符串模板和反引号，使的字符串可以换行，拼接html结构字符串的时候能保清晰的格式，直观便捷。(字符串模板只反引号中使用才有效，”abc${str}123”就只是个普通的字符串了。)</p>
